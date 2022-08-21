@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+.flex{
+  display: flex;
+}
+form input{
+
+  width: 0;
+  height: 0;
+}
+.img{
+  width: 20%;
+}
+h1{
+  text-align: center;
+  margin: 5px 5px;
+  font-size:1.5rem;
+}
+.container{
+  width: 70%;
+  margin: 2px auto;
+}
+img{
+  margin: 90px 30px;
+    width: 50%;
+    clip-path: circle(38.8% at 50% 44%);
+    z-index: -2;
+}
+.customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 100%;
+}
+.customers td, .customers th,th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}  
+.name{
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    color: white;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper button {
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 1rem;
+  padding: 20px 50px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  background-color: transparent;
+  transition: box-shadow .3s ease;
+}
+
+.success {
+  color: #111;
+  border: 5px solid #3cc091;
+}
+
+.success:hover {
+  box-shadow: 0px 0px 20px 2px #3cc091, inset 0px 0px 40px 1px #3cc091;
+}
+
+.purple {
+  color: #111;
+  border: 5px solid #7030a3;
+}
+
+.purple:hover {
+  box-shadow: 0px 0px 20px 2px #7030a3, inset 0px 0px 40px 10px #7030a3;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .flex{
+    display: block;
+  }
+  .img{
+    margin: -60px auto;
+    width: 20%;
+  }
+  .container{
+    width: 100%;
+  }
+  img{
+    width: 100%;
+    clip-path: circle(38.8% at 50% 44%);
+    z-index: -2;
+  }
+  .customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      margin: 20px auto;
+      width: 80%;
+  }
+  .customers td, .customers th,th {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+  }  
+  .name{
+      background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+      color: white;
+  }
+}
+@media screen and (max-width: 600px) {
+  .img{
+    margin: -60px auto;
+    width: 40%;
+  }
+  .wrapper button {
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 0rem;
+    padding: 12px 25px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    background-color: transparent;
+    transition: box-shadow .3s ease;
+  }
+
+}
+@media screen and (max-width: 340px) {
+  .wrapper button {
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    background-color: transparent;
+    transition: box-shadow .3s ease;
+  }
+}

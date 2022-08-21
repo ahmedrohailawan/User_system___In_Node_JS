@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit your profile</title>
+    <link rel="stylesheet" href="css/login_signup.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">Edit profile</div>
+        </div>
+        <div>
+        </div>
+        <div class="form-container">
+            <div class="form-inner">
+                <form action="/edit" enctype="multipart/form-data" method="post" class="login">
+                    <div class="field">
+                        <input type="text" value="{{user.name}}" placeholder="Enter Your name" name="name" id="name" required>
+                    </div>
+                        <input type="hidden" value="{{user._id}}" name="id" id="id" required>
+                    <div class="field">
+                        <input type="email" value="{{user.email}}" placeholder="Enter Your email" name="email" id="email" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" value="{{user.gender}}" placeholder="Enter Your gender" name="gender" id="gender" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" value="{{user.age}}" placeholder="Enter Your age" name="age" id="age" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" value="{{user.country}}" placeholder="Enter Your country" name="country" id="country" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" value="{{user.course}}" placeholder="Enter Your course" name="course" id="course" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" value="{{user.duration}}" placeholder="Enter Your duration" name="duration" id="duration" required>
+                    </div>
+                    <div class="field">
+                        <input type="file" name="image" id="image">
+                    </div>
+                    <div class="field btn">
+                        <div class="btn-layer">
+                        </div>
+                        <input type="submit" value="Edit" >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/login_signup.js"></script>
+</body>
+</html>

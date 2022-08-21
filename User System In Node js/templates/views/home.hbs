@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+{{>navbar}}
+{{#if message}}
+    {{message}}  
+{{/if}}
+<div class="flex"> 
+    <div class="img">
+        <img src="user_images/{{user.image}}" alt="">
+    </div>
+
+    <div class="container">
+        <table class="customers">
+            <tr>
+                <td class="name">Name</td>
+                <td >{{user.name}}</td>
+            </tr>
+            <tr>
+                <td class="name">Email</td>
+                <td >{{user.email}}</td>
+            </tr>
+            <tr>
+                <td class="name">Gender</td>
+                <td >{{user.gender}}</td>
+            </tr>
+            <tr>
+                <td class="name">Age</td>
+                <td >{{user.age}}</td>
+            </tr>
+            <tr>
+                <td class="name">Country</td>
+                <td >{{user.country}}</td>
+            </tr>
+            <tr>
+                <td class="name">Company</td>
+                <td >{{user.company}}</td>
+            </tr>
+            <tr>
+                <td class="name">Course</td>
+                <td >{{user.course}}</td>
+            </tr>
+            <tr>
+                <td class="name">Duration</td>
+                <td >{{user.duration}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+<script>
+{{#if message}}
+alert({{message}})
+{{/if}}
+</script>
+    <script src="js/navbar.js"></script>
+    <script src="js/home.js"></script>
+</html>
